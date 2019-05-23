@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<script src="web3.js"></script>
+<!-- minimal test to check whether it just works -->
+<script>
+console.log('Web3', Web3)
+const web3 = new Web3(Web3.givenProvider)
+console.log('web3', web3)
+web3.eth.getBlockNumber()
+.then(console.log)
+</script>

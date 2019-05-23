@@ -1,0 +1,46 @@
+{
+  "name": "web3.js-browser",
+  "version": "0.0.1-beta.55",
+  "description": "An intent to optimize web3 for browser usage.",
+  "main": "index.js",
+  "repository": "https://github.com/andy0130tw/web3.js-browser",
+  "author": "Andy Pan <andypan@ntuosc.org>",
+  "license": "LGPL-3.0",
+  "scripts": {
+    "build": "webpack --config ./webpack.config.js  --mode development",
+    "build:prod": "webpack --config ./webpack.config.js  --mode production --output ./dist/web3.min.js"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-export-default-from": "^7.2.0",
+    "@babel/plugin-proposal-export-namespace-from": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "bn.js": "4.11.8",
+    "browserify-cipher": "^1.0.1",
+    "core-js": "^3.1.2",
+    "eth-ens-namehash": "2.0.8",
+    "eth-lib": "0.2.8",
+    "ethereumjs-tx": "^1.3.7",
+    "ethers": "^4.0.27",
+    "ethjs-unit": "^0.1.6",
+    "eventemitter3": "3.1.0",
+    "lodash": "^4.17.11",
+    "number-to-bn": "1.7.0",
+    "pbkdf2": "^3.0.17",
+    "randombytes": "^2.1.0",
+    "rxjs": "^6.4.0",
+    "scrypt.js": "0.3.0",
+    "url-parse": "1.4.4",
+    "utf8": "2.1.1",
+    "uuid": "3.3.2",
+    "webpack-cli": "^3.3.2",
+    "websocket": "^1.0.28",
+    "xhr2-cookies": "1.1.0"
+  },
+  "dependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/runtime": "^7.4.5",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.32.2"
+  }
+}
