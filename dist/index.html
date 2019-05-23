@@ -1,0 +1,21 @@
+<h1>Test</h1>
+
+<script src="./web3.bundle.umd.js"></script>
+<!-- <script src="https://wzrd.in/standalone/web3@1.0.0-beta.47"></script> -->
+<!-- <script src="webpacked.js"></script> -->
+<script>
+console.log(Web3)
+console.log('provider', Web3.givenProvider)
+const web3 = new Web3(Web3.providers.HttpProvider('https://rinkeby.infura.io/v3/c008d0e76879497a92b18d99b60b6ca3'))
+// const web3 = new Web3(Web3.givenProvider)
+
+web3.eth.getAccounts().then(console.log)
+
+console.log(web3)
+</script>
+
+<!-- <script>
+global = window;
+</script>
+<script src="elliptic/index.js"></script>
+ -->
