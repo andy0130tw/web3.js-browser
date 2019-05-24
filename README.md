@@ -4,6 +4,7 @@ An intent to bundle a standalone version of web3.js for browsers.
 # Usage
 
 ```bash
+git submodule init
 git submodule update
 
 # configure web3
@@ -13,5 +14,6 @@ npm run build  # build web3 packages; we only need *.esm.js
 cd ..
 
 # build web3.js
+yarn
 npm run build
 ```
