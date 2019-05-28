@@ -23,7 +23,7 @@ const babelConfig = {
 }
 
 module.exports = {
-  entry: './web3.js/packages/web3/dist/web3.esm.js',
+  entry: './src/web3.js',
   resolve: {
     mainFields: ['module', 'browser', 'main'],
     modules: [
