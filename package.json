@@ -1,14 +1,14 @@
 {
   "name": "web3.js-browser",
-  "version": "0.0.1-beta.55",
+  "version": "0.1.0-alpha.1",
   "description": "An intent to optimize web3 for browser usage.",
   "main": "index.js",
   "repository": "https://github.com/andy0130tw/web3.js-browser",
   "author": "Andy Pan <andypan@ntuosc.org>",
   "license": "LGPL-3.0",
   "scripts": {
-    "build": "webpack --config ./webpack.config.js  --mode development",
-    "build:prod": "webpack --config ./webpack.config.js  --mode production --output ./dist/web3.min.js"
+    "build": "webpack --config ./webpack.config.js --mode development --devtool source-map --output ./dist/web3.js",
+    "build:prod": "webpack --config ./webpack.config.js --mode production --output ./dist/web3.min.js"
   },
   "devDependencies": {
     "@babel/plugin-proposal-export-default-from": "^7.2.0",
@@ -28,11 +28,12 @@
     "pbkdf2": "^3.0.17",
     "randombytes": "^2.1.0",
     "rxjs": "^6.4.0",
-    "scrypt.js": "0.3.0",
+    "scryptsy": "2.1.0",
+    "semver": "6.2.0",
     "url-parse": "1.4.4",
     "utf8": "2.1.1",
     "uuid": "3.3.2",
-    "webpack-cli": "^3.3.2",
+    "webpack-cli": "^3.3.6",
     "websocket": "^1.0.28",
     "xhr2-cookies": "1.1.0"
   },
