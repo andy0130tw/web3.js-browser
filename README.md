@@ -1,7 +1,20 @@
 # web3.js-browser
-An intent to bundle a standalone version of web3.js for browsers.
+[![jsdelivr](https://data.jsdelivr.com/v1/package/gh/andy0130tw/web3.js-browser/badge)](https://www.jsdelivr.com/package/gh/andy0130tw/web3.js-browser) \
+[![NPM](https://nodei.co/npm/web3.js-browser.png)](https://nodei.co/npm/web3.js-browser/)
 
-# Usage
+An intent to bundle a standalone version of web3.js for browsers, because web3.js SHOULD has a 2.x minified version for dApp developers.
+
+FYI: [web3.js#2623](https://github.com/ethereum/web3.js/issues/2623).
+
+# tl;dr
+
+* Download scripts in [build/](build) directory, or
+* Use it as a typical [npm module](https://www.npmjs.com/package/web3.js-browser), or
+* Import from CDN services like [jsDelivr](https://cdn.jsdelivr.net/gh/andy0130tw/web3.js-browser@0.1.0/build/web3.min.js).
+
+It is recommended to **pin** this bundle **to some specific version**, because web3.js varies dramatically across versions. You may waste much time debugging on some inconsistencies like me if used naively.
+
+# Build
 
 ```bash
 git submodule init
