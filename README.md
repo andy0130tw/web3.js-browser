@@ -2,7 +2,7 @@
 [![jsdelivr](https://data.jsdelivr.com/v1/package/gh/andy0130tw/web3.js-browser/badge)](https://www.jsdelivr.com/package/gh/andy0130tw/web3.js-browser) \
 [![NPM](https://nodei.co/npm/web3.js-browser.png)](https://nodei.co/npm/web3.js-browser/)
 
-An intent to bundle a standalone version of web3.js for browsers, because web3.js SHOULD has a 2.x minified version for dApp developers.
+An intent to bundle a standalone version of web3.js for browsers, because web3.js SHOULD have a 2.x minified version for dApp developers.
 
 FYI: [web3.js#2623](https://github.com/ethereum/web3.js/issues/2623).
 
