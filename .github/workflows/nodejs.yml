@@ -18,8 +18,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - name: Build web3.js
+      working-directory: ./web3.js
       run: |
-        cd web3.js
         npm ci
         npm run build
     - name: Build web3.js-browser
