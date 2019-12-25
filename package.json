@@ -1,8 +1,8 @@
 {
   "name": "web3.js-browser",
-  "version": "0.1.0-alpha.1",
+  "version": "0.2.0",
   "description": "An intent to optimize web3 for browser usage.",
-  "main": "index.js",
+  "main": "build/index.js",
   "repository": "https://github.com/andy0130tw/web3.js-browser",
   "author": "Andy Pan <andypan@ntuosc.org>",
   "license": "LGPL-3.0",

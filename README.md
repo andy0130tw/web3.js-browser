@@ -10,7 +10,7 @@ FYI: [web3.js#2623](https://github.com/ethereum/web3.js/issues/2623).
 
 * Download scripts in [build/](build) directory, or
 * Use it as a typical [npm module](https://www.npmjs.com/package/web3.js-browser), or
-* Import from CDN services like [jsDelivr](https://cdn.jsdelivr.net/gh/andy0130tw/web3.js-browser@0.1.0/build/web3.min.js).
+* Import from CDN services like [jsDelivr](https://cdn.jsdelivr.net/gh/andy0130tw/web3.js-browser@0.2.0/build/web3.min.js).
 
 It is recommended to **pin** this bundle **to some specific version**, because web3.js varies dramatically across versions. You may waste much time debugging on some inconsistencies like me if used naively.
 
@@ -32,6 +32,8 @@ npm run build
 ```
 
 # Web3.js caveats
+
+The author was not careful enough to mistake v2.0.0-alpha for v2.0.0-alpha.1. To reduce confusion, this project deserves its own semantics versioning. See the releases page for details.
 
 ## `Scrypt`
 This bundle current follows **v2.0.0-alpha.1**. Current implementation deprecates `scrypt` dependency in higher versions of Node.js, likely because its lack of security. If you see the following message, it can be safely ignored.
