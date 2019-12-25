@@ -11,9 +11,9 @@
     "build:prod": "webpack --config ./webpack.config.js --mode production --output ./dist/web3.min.js"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-export-default-from": "^7.2.0",
-    "@babel/plugin-proposal-export-namespace-from": "^7.2.0",
-    "@babel/plugin-transform-runtime": "^7.4.4",
+    "@babel/plugin-proposal-export-default-from": "^7.7.4",
+    "@babel/plugin-proposal-export-namespace-from": "^7.7.4",
+    "@babel/plugin-transform-runtime": "^7.7.6",
     "bn.js": "4.11.8",
     "browserify-cipher": "^1.0.1",
     "core-js": "^3",
@@ -23,7 +23,7 @@
     "ethers": "^4.0.27",
     "ethjs-unit": "^0.1.6",
     "eventemitter3": "3.1.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.11",
     "number-to-bn": "1.7.0",
     "pbkdf2": "^3.0.17",
     "randombytes": "^2.1.0",
@@ -33,15 +33,15 @@
     "url-parse": "1.4.4",
     "utf8": "2.1.1",
     "uuid": "3.3.2",
-    "webpack-cli": "^3.3.6",
-    "websocket": "^1.0.28",
+    "webpack-cli": "^3.3.10",
+    "websocket": "github:web3-js/WebSocket-Node#polyfill/globalThis",
     "xhr2-cookies": "1.1.0"
   },
   "dependencies": {
-    "@babel/core": "^7.4.5",
-    "@babel/preset-env": "^7.4.5",
-    "@babel/runtime": "^7.4.5",
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/runtime": "^7.7.7",
     "babel-loader": "^8.0.6",
-    "webpack": "^4.32.2"
+    "webpack": "^4.41.4"
   }
 }
