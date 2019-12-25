@@ -17,11 +17,12 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+    - name: Install dependencies of web3.js
+      working-directory: ./web3.js
+      run: npm install
     - name: Build web3.js
       working-directory: ./web3.js
-      run: |
-        npm ci
-        npm run build
+      run: npm run build
     - name: Build web3.js-browser
       run: |
         yarn install --frozen-lockfile
