@@ -12,13 +12,16 @@ jobs:
         node-version: [8.x, 10.x, 12.x]
 
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
     - name: Checkout submodules
-      uses: textbook/git-checkout-submodule-action@2.0.0
+      shell: bash
+      run: |
+        git submodule sync --recursive
+        git -c protocol.version=2 submodule update --init --force --recursive --depth=1
     - name: Install dependencies of web3.js
       working-directory: ./web3.js
       run: npm ci
