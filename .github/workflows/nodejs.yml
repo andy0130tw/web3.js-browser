@@ -28,9 +28,16 @@ jobs:
     - name: Build web3.js
       working-directory: ./web3.js
       run: npm run build
+    - name: Install dependencies of web3.js-browser
+      run: yarn install --frozen-lockfile
     - name: Build web3.js-browser
       run: |
-        yarn install --frozen-lockfile
-        npm run build --if-present
+        npm run build
+        npm run build:prod
       env:
         CI: true
+    - name: Upload built files
+      uses: actions/upload-artifact@v1
+      with:
+        name: web3.js-browser-dist
+        path: dist
